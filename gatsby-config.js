@@ -3,6 +3,7 @@ require('dotenv').config({ path: '.env.secret' })
 module.exports = {
   siteMetadata: {
     title: "Kellyn e Marcelo",
+    siteUrl: "https://kellynemarcelo.com",
   },
   plugins: [
     {

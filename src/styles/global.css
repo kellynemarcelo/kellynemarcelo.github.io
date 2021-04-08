@@ -1,0 +1,202 @@
+html {
+  background-color: #FFF;
+}
+
+body {
+  max-width: 1080px;
+  padding-top: 2rem;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Poppins;
+  font-size: 16px;
+  color: #465458;
+  line-height: 1.4;
+}
+
+div.background-slant,
+div.background-slant::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #E6E6EE;
+  z-index: -1;
+}
+
+div.background-slant {
+  top: 0;
+  height: 40rem;
+}
+
+div.background-slant::after {
+  content: "";
+  bottom: -11vw;
+  height: 11vw;
+  transform: skew(-84deg);
+  transform-origin: top;
+}
+
+nav.header-navigation {
+  display: flex;
+  padding-bottom: 4rem;
+}
+
+nav.header-navigation a.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #465458;
+}
+
+nav.header-navigation a.logo-link img {
+  width: 90px;
+  height: 90px;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+nav.header-navigation div.logo-kellyn-e-marcelo hr {
+  width: 60%;
+  margin-left: 0;
+  border: 2px solid #805577;
+}
+
+nav.header-navigation ul {
+  display: flex;
+  align-self: center;
+  padding: 0;
+  margin-left: auto;
+  list-style: none;
+}
+
+nav.header-navigation li {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+nav.header-navigation li a {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #465458;
+}
+
+nav.header-navigation li a:hover {
+  color: #805577;
+}
+
+div.presentation {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.presentation-content {
+  width: 46%;
+}
+
+div.presentation-content h1,
+div.presentation-content h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+div.presentation-content h1 {
+  font-size: 2.8rem;
+  color: #333;
+}
+
+div.presentation-content h2 {
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+div.presentation-video {
+  width: 46%;
+}
+
+div.presentation-video iframe {
+  width: 100%;
+  height: 278px;
+  margin-top: 5.6rem;
+}
+
+div.articles div.articles-title {
+  margin: auto;
+  width: max-content;
+}
+
+div.articles div.articles-title h2 {
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  color: #333;
+}
+
+div.articles div.articles-title hr {
+  width: 60%;
+  margin-left: 0;
+  margin-bottom: 2rem;
+  border: 2px solid #805577;
+}
+
+
+a.article-link {
+  display: block;
+  width: 50%;
+  margin: auto;
+  text-decoration: none;
+  color: #465458;
+}
+
+article {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: #FFF;
+  border: .1rem solid #805577;
+  border-radius: .5rem;
+}
+
+article:hover {
+  border-color: #FFF;
+  outline: .2rem solid #805577;
+  -moz-outline-radius: .5rem;
+}
+
+article h3,
+article p {
+  margin-top: .5rem;
+}
+
+article h3 {
+  margin-bottom: 0;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: 2.5rem;
+  background-color: #E6E6EE;
+}
+
+footer div.footer-content {
+  max-width: 1080px;
+  padding: 2.5rem;
+  margin: auto;
+}
+
+footer div.social-media {
+  float: right;
+}
+
+footer div.social-media a {
+  display: inline-flex;
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #465458;
+}
+
+footer div.social-media a span {
+  margin-left: 0.3rem;
+}
