@@ -201,7 +201,17 @@ footer div.social-media a span {
   margin-left: 0.3rem;
 }
 
+@media (max-width: 992px) {
+  div.background-slant {
+    height: 43rem;
+  }
+}
+
 @media (max-width: 991px) {
+  div.background-slant {
+    height: 34rem;
+  }
+
   nav.header-navigation a.logo-link {
     font-size: 1.2rem;
   }
@@ -237,7 +247,23 @@ footer div.social-media a span {
   }
 }
 
+@media (max-width: 800px) {
+  div.background-slant {
+    height: 37rem;
+  }
+}
+
+@media (max-width: 768px) {
+  div.background-slant {
+    height: 39rem;
+  }
+}
+
 @media (max-width: 767px) {
+  nav.header-navigation div.logo-kellyn-e-marcelo {
+    display: none;
+  }
+
   div.background-slant {
     height: 55rem;
   }
@@ -285,6 +311,12 @@ footer div.social-media a span {
   }
 }
 
+@media (max-width: 520px) {
+  div.background-slant {
+    height: 54rem;
+  }
+}
+
 @media (max-width: 518px) {
   footer div.footer-content {
     display: block;
@@ -313,13 +345,15 @@ footer div.social-media a span {
   }
 }
 
-@media (max-width: 360px) {
-  nav.header-navigation div.logo-kellyn-e-marcelo {
-    display: none;
-  }
-
+@media (max-width: 375px) {
   nav.header-navigation li {
     margin-left: .9rem;
     font-size: .9rem;
+  }
+}
+
+@media (max-width: 375px) {
+  div.background-slant {
+    height: 55rem;
   }
 }
