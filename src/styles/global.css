@@ -4,7 +4,7 @@ html {
 
 body {
   max-width: 1080px;
-  padding-top: 2rem;
+  padding: 2rem 1rem 0 1rem;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
@@ -140,7 +140,6 @@ div.articles div.articles-title hr {
   border: 2px solid #805577;
 }
 
-
 a.article-link {
   display: block;
   width: 50%;
@@ -176,14 +175,15 @@ footer {
   position: absolute;
   left: 0;
   width: 100%;
-  margin-top: 2.5rem;
   background-color: #E6E6EE;
 }
 
 footer div.footer-content {
-  max-width: 1080px;
-  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
   margin: auto;
+  max-width: 1080px;
 }
 
 footer div.social-media {
@@ -199,4 +199,127 @@ footer div.social-media a {
 
 footer div.social-media a span {
   margin-left: 0.3rem;
+}
+
+@media (max-width: 991px) {
+  nav.header-navigation a.logo-link {
+    font-size: 1.2rem;
+  }
+
+  nav.header-navigation a.logo-link img {
+    width: 70px;
+    height: 70px;
+  }
+
+  body {
+    padding-top: 1rem;
+  }
+
+  div.presentation-content h1 {
+    font-size: 2.4rem;
+  }
+
+  div.presentation-content h2 {
+    font-size: 1.6rem;
+  }
+
+  div.presentation-video iframe {
+    height: 191px;
+    margin-top: 4.8rem;
+  }
+
+  a.article-link {
+    width: 80%;
+  }
+
+  footer div.footer-content {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 767px) {
+  div.background-slant {
+    height: 55rem;
+  }
+
+  nav.header-navigation {
+    padding-bottom: 2rem;
+  }
+
+  body {
+    max-width: 480px;
+  }
+
+  div.presentation {
+    display: block;
+  }
+
+  div.presentation-content {
+    width: 100%;
+  }
+
+  div.presentation-video {
+    width: 100%;
+  }
+
+  div.presentation-video iframe {
+    height: 270px;
+    margin-top: 2rem;
+  }
+
+  a.article-link {
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 1rem;
+  }
+
+  footer div.copyright {
+    margin-bottom: .4rem;
+  }
+
+  footer div.social-media a {
+    display: flex;
+    margin-bottom: .4rem;
+  }
+}
+
+@media (max-width: 518px) {
+  footer div.footer-content {
+    display: block;
+    max-width: max-content;
+  }
+
+  footer div.social-media {
+    float: unset;
+    margin-top: 1rem;
+  }
+
+  footer div.social-media a {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  div.presentation-video iframe {
+    height: 220px;
+  }
+}
+
+@media (max-width: 400px) {
+  div.presentation-video iframe {
+    height: 186px;
+  }
+}
+
+@media (max-width: 360px) {
+  nav.header-navigation div.logo-kellyn-e-marcelo {
+    display: none;
+  }
+
+  nav.header-navigation li {
+    margin-left: .9rem;
+    font-size: .9rem;
+  }
 }

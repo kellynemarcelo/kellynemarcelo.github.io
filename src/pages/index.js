@@ -97,7 +97,7 @@ const IndexPage = () => {
 
       <footer>
         <div className="footer-content">
-          © Kellyn e Marcelo 2021.
+          <div className="copyright">© Kellyn e Marcelo 2021</div>
 
           <div className="social-media">
             <a href="https://www.youtube.com/c/kellynemarcelo?sub_confirmation=1" aria-label="YouTube" target="_blank" rel="noopener">
