@@ -3,19 +3,27 @@ html {
 }
 
 body {
-  max-width: 1080px;
-  padding: 2rem 1rem 0 1rem;
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
   font-family: Poppins;
   font-size: 16px;
   color: #465458;
   line-height: 1.4;
 }
 
-div.background-slant,
-div.background-slant::after {
+header {
+  background: #E6E6EE;
+}
+
+header .header-content,
+.articles {
+  max-width: 1080px;
+  padding: 2rem 1rem 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.index-page div.background-slant,
+div.index-page div.background-slant::after {
   position: absolute;
   left: 0;
   width: 100%;
@@ -23,12 +31,15 @@ div.background-slant::after {
   z-index: -1;
 }
 
-div.background-slant {
+div.index-page div.background-slant {
   top: 0;
-  height: 40rem;
 }
 
-div.background-slant::after {
+div.index-page div.background-slant {
+  height: 48rem;
+}
+
+div.index-page div.background-slant::after {
   content: "";
   bottom: -11vw;
   height: 11vw;
@@ -38,7 +49,7 @@ div.background-slant::after {
 
 nav.header-navigation {
   display: flex;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 
 nav.header-navigation a.logo-link {
@@ -87,39 +98,66 @@ nav.header-navigation li a:hover {
   color: #805577;
 }
 
-div.presentation {
+div.index-page div.presentation {
   display: flex;
   justify-content: space-between;
 }
 
-div.presentation-content {
+div.index-page div.presentation-content {
   width: 46%;
 }
 
-div.presentation-content h1,
-div.presentation-content h2 {
+div.index-page div.presentation-content h1,
+div.index-page div.presentation-content h2 {
   margin: 0;
   margin-bottom: 1rem;
 }
 
-div.presentation-content h1 {
+div.index-page div.presentation-content h1 {
   font-size: 2.8rem;
   color: #333;
 }
 
-div.presentation-content h2 {
+div.index-page div.presentation-content h2 {
   font-weight: normal;
   font-size: 2rem;
 }
 
-div.presentation-video {
+div.index-page div.presentation-video {
   width: 46%;
 }
 
-div.presentation-video iframe {
+div.index-page div.presentation-video iframe {
   width: 100%;
   height: 278px;
   margin-top: 5.6rem;
+}
+
+div.articles-page div.presentation {
+  padding-bottom: 3rem;
+  max-width: 38rem;
+  margin: auto;
+}
+
+div.articles-page div.presentation-content {
+  text-align: center;
+}
+
+div.articles-page div.presentation-content h1 {
+  margin-top: 0;
+  color: #333;
+}
+
+div.articles-page div.presentation-content h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+div.articles-page div.presentation hr {
+  width: 20%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 2px solid #805577;
 }
 
 div.articles div.articles-title {
@@ -175,6 +213,7 @@ footer {
   position: absolute;
   left: 0;
   width: 100%;
+  margin-top: 2rem;
   background-color: #E6E6EE;
 }
 
@@ -201,15 +240,33 @@ footer div.social-media a span {
   margin-left: 0.3rem;
 }
 
+@media (min-width: 992px) {
+  div.index-page div.background-slant {
+    height: 51rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  div.index-page div.background-slant {
+    height: 48rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  div.index-page div.background-slant {
+    height: 46rem;
+  }
+}
+
 @media (max-width: 992px) {
-  div.background-slant {
-    height: 43rem;
+  div.index-page div.presentation-video iframe {
+    height: 247px;
   }
 }
 
 @media (max-width: 991px) {
-  div.background-slant {
-    height: 34rem;
+  div.index-page div.background-slant {
+    height: 44rem;
   }
 
   nav.header-navigation a.logo-link {
@@ -221,20 +278,21 @@ footer div.social-media a span {
     height: 70px;
   }
 
-  body {
+  header .header-content,
+  .articles {
     padding-top: 1rem;
   }
 
-  div.presentation-content h1 {
+  div.index-page div.presentation-content h1 {
     font-size: 2.4rem;
   }
 
-  div.presentation-content h2 {
+  div.index-page div.presentation-content h2 {
     font-size: 1.6rem;
   }
 
-  div.presentation-video iframe {
-    height: 191px;
+  div.index-page div.presentation-video iframe {
+    height: 247px;
     margin-top: 4.8rem;
   }
 
@@ -242,20 +300,34 @@ footer div.social-media a span {
     width: 80%;
   }
 
+  footer {
+    margin-top: 1rem;
+  }
+
   footer div.footer-content {
     font-size: .9rem;
   }
 }
 
+@media (max-width: 965px) {
+  div.index-page div.presentation-video iframe {
+    height: 240px;
+  }
+}
+
 @media (max-width: 800px) {
-  div.background-slant {
-    height: 37rem;
+  div.index-page div.presentation-video iframe {
+    height: 190px;
+  }
+
+  div.index-page div.background-slant {
+    height: 44rem;
   }
 }
 
 @media (max-width: 768px) {
-  div.background-slant {
-    height: 39rem;
+  div.index-page div.background-slant {
+    height: 46rem;
   }
 }
 
@@ -264,41 +336,37 @@ footer div.social-media a span {
     display: none;
   }
 
-  div.background-slant {
-    height: 55rem;
+  div.index-page div.background-slant {
+    height: 62rem;
   }
 
   nav.header-navigation {
     padding-bottom: 2rem;
   }
 
-  body {
+  header .header-content {
     max-width: 480px;
   }
 
-  div.presentation {
+  div.index-page div.presentation {
     display: block;
   }
 
-  div.presentation-content {
+  div.index-page div.presentation-content {
     width: 100%;
   }
 
-  div.presentation-video {
+  div.index-page div.presentation-video {
     width: 100%;
   }
 
-  div.presentation-video iframe {
+  div.index-page div.presentation-video iframe {
     height: 270px;
     margin-top: 2rem;
   }
 
   a.article-link {
     width: 100%;
-  }
-
-  footer {
-    margin-top: 1rem;
   }
 
   footer div.copyright {
@@ -312,8 +380,8 @@ footer div.social-media a span {
 }
 
 @media (max-width: 520px) {
-  div.background-slant {
-    height: 54rem;
+  div.index-page div.background-slant {
+    height: 60rem;
   }
 }
 
@@ -333,14 +401,20 @@ footer div.social-media a span {
   }
 }
 
+@media (max-width: 446px) {
+  nav.header-navigation li span[role="img"] {
+    display: none;
+  }
+}
+
 @media (max-width: 420px) {
-  div.presentation-video iframe {
-    height: 220px;
+  div.index-page div.presentation-video iframe {
+    height: 210px;
   }
 }
 
 @media (max-width: 400px) {
-  div.presentation-video iframe {
+  div.index-page div.presentation-video iframe {
     height: 186px;
   }
 }
@@ -353,7 +427,7 @@ footer div.social-media a span {
 }
 
 @media (max-width: 375px) {
-  div.background-slant {
-    height: 55rem;
+  div.index-page div.background-slant {
+    height: 62rem;
   }
 }
