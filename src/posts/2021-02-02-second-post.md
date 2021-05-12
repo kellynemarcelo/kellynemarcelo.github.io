@@ -1,6 +1,6 @@
 ---
-slug: "/artigos/first-post"
-date: "2021-02-03"
+slug: "/artigos/second-post"
+date: "2021-02-02"
 title: "Ipsum dolor sit amet consectetur adipiscing elit pellentesque 🍅"
 tags: "lorem,ipsum,dolor"
 ---
