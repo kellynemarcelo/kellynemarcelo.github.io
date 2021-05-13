@@ -15,7 +15,7 @@ const Header = ({ children }) => (
         </a>
 
         <ul>
-          <li><a href="/"><span role="img" aria-label="">ℹ️</span> Sobre</a></li>
+          <li style={{ display: 'none' }}><a href="/"><span role="img" aria-label="">ℹ️</span> Sobre</a></li>
           <li><a href="/articles"><span role="img" aria-label="">📝</span> Artigos</a></li>
           <li>
             <a
