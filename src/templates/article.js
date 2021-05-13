@@ -1,4 +1,6 @@
 import React from "react"
+import "@fontsource/poppins"
+import "../styles/global.css"
 import { graphql } from "gatsby"
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -19,7 +21,7 @@ export const query = graphql`
   }
 `
 
-const Article = ({ data: { markdownRemark: { frontmatter: { title, description, author, date, tags }, html } } }) => (
+const ArticleTemplate = ({ data: { markdownRemark: { frontmatter: { title, description, author, date, tags }, html } } }) => (
   <div className="page article-page">
     <Header>
         <div className="presentation">
@@ -59,4 +61,4 @@ const Article = ({ data: { markdownRemark: { frontmatter: { title, description, 
   </div>
 )
 
-export default Article;
+export default ArticleTemplate;
