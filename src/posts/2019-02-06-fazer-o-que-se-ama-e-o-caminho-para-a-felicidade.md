@@ -1,7 +1,7 @@
 ---
 slug: "/artigos/fazer-o-que-se-ama-e-o-caminho-para-a-felicidade"
 date: "2019-02-06"
-title: "Fazer o que se ama é o caminho para a felicidade?"
+title: "🧭 Fazer o que se ama é o caminho para a felicidade?"
 description: ""
 tags: ""
 author: "kellyn"
