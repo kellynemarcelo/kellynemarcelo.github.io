@@ -4,7 +4,8 @@ import { graphql, useStaticQuery } from "gatsby"
 const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { frontmatter: { title: { ne: "" } } }
+      filter: { frontmatter: { title: { ne: "" } } },
+      sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
         node {
