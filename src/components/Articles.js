@@ -33,7 +33,7 @@ const Articles = () => {
           <small>{date}</small>
           <h3>{title}</h3>
           <p>{description || excerpt}</p>
-          <strong>{tags.split(',').map(tag => `#${tag} `)}</strong>
+          {tags ? <strong>{tags.split(',').map(tag => `#${tag} `)}</strong> : null}
         </article>
       </a>
     ))

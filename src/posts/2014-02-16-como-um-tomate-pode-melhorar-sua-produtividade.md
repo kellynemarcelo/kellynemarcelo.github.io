@@ -9,8 +9,6 @@ author: "marcelo"
 
 Como programador algumas das minhas preocupações estão relacionadas a produtividade e a eficiência. Em certos momentos eu me pergunto: como posso fazer mais em menos tempo e com a melhor qualidade possível? Em busca de uma resposta para essa pergunta me deparei com uma técnica que venho tentando aplicar no meu dia a dia, e gostaria de compartilhar minhas opiniões sobre ela com vocês.
 
-<!--more-->
-
 # O tomate “mágico”
 
 Na década de 80 um estudante italiano chamado Francesco Cirillo estava tendo alguns problemas no tempo em que passava com os livros em sua universidade. Mas o que talvez nem mesmo ele imaginasse era que um utensilio doméstico poderia mudar isso. Olhando para um timer de cozinha em formato de tomate ele teve uma ideia e resolveu colocá-la a prova durante seus estudos.
